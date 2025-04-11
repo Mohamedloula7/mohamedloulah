@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>ENG</span>LOULAH_CODE</a>
+            <ul class="links">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Porjects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="social-link">
+                <a href="https://www.facebook.com/share/1FUM69YLpR/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/mohamedloulah1?s=09"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-loulah-539979306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <i id="btnMenu" class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <div class="hero-sec">
+        <div class="contanier">
+            <div class="div-text">
+                <h1>Mohamed A Loulah</h1>
+                <span>student</span>
+                <p>I am Mohamed Ahmed Loulah, a student at the Faculty of Computer Science.
+                During my studies,I learned programming languages such as C++, HTML, CSS, and Python.</p>
+                <a href="#" class="btn"> My Works</a>
+            </div>
+            <div class="div-img">
+                <img src="IMG_20231007_003051_785-Photoroom.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let btnMenu = document.getElementById("btnMenu")
+        let NavLinks =document.querySelector(".links")
+        btnMenu.onclick=function(){
+            btnMenu.classList.toggle("fa-times")
+            NavLinks.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
